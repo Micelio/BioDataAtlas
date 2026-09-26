@@ -51,6 +51,20 @@ Live SPARQL/data endpoints this effort queries against.
 | Bionames (Rod Page's own Koetai instance — Bionomia, BHL, registry datasets) | [koetai.bionames.org/endpoints](https://koetai.bionames.org/endpoints) |
 | Banco de Germoplasma Vegetal — UPM (Wilkinson lab seedbank data; `administrative`/`germplasm`/`location` repositories, matching the FLAIR-GG SemanticModel) | [bgv.cbgp.upm.es/repositories/administrative](https://bgv.cbgp.upm.es/repositories/administrative) · [.../germplasm](https://bgv.cbgp.upm.es/repositories/germplasm) · [.../location](https://bgv.cbgp.upm.es/repositories/location) |
 
+## Tools using the data
+
+Applications built on top of the resources above, as opposed to the pipelines
+and mappings that produce/shape the RDF itself.
+
+| Tool | What it does | Resources it uses |
+|---|---|---|
+| [inat-wikidata-dashboard](https://github.com/wikiproject-biodiversity/wikiproject-biodiversity.github.io/tree/main/inat-wikidata-dashboard) | Curation dashboard cross-referencing iNaturalist observations against Wikidata/Wikipedia/GBIF/Plazi/BHL | Wikidata (QLever + WDQS), GBIF (QLever), SynoSpecies (Plazi TreatmentBank), BHL at Koetai |
+| [treatmentbot](https://github.com/wikiproject-biodiversity/treatmentbot) | Bot syncing Plazi TreatmentBank records into Wikidata | Plazi TreatmentBank, Wikidata |
+| [taxonname-wpstubmaker](https://github.com/wikiproject-biodiversity/taxonname-wpstubmaker) | Notebook drafting Wikipedia stubs from extracted taxon data | Wikidata, Wikipedia |
+| [iNotListed](https://github.com/wikiproject-biodiversity/iNotListed) | CLI tool finding taxa missing a Wikipedia article | Wikidata, Wikipedia |
+| [Bionames](https://koetai.bionames.org/endpoints) (Rod Page) | Resolves taxonomic names to stable identifiers | Bionomia, BHL, registry (his own Koetai instance) |
+| [koetai-platform](https://github.com/Koetai/koetai-platform) | FAIR SPARQL hosting platform | Serves/hosts the BHL, Bionomia, and registry endpoints above |
+
 ## Semantic artefacts
 
 Mappings, shapes, and reconciliation logic already produced by this effort.
