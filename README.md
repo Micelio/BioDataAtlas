@@ -46,3 +46,25 @@ Live SPARQL/data endpoints this effort queries against.
 | Plazi TreatmentBank | [tb.plazi.org](https://tb.plazi.org) |
 | BHL (Biodiversity Heritage Library) at Koetai | [koetai.semscape.org/u/0000-0001-9773-4008/bhl/sparql](https://koetai.semscape.org/u/0000-0001-9773-4008/bhl/sparql) |
 | Bionames (Rod Page's own Koetai instance — Bionomia, BHL, registry datasets) | [koetai.bionames.org/endpoints](https://koetai.bionames.org/endpoints) |
+
+## Semantic artefacts
+
+Mappings, shapes, and reconciliation logic already produced by this effort.
+
+**[koetai-platform](https://github.com/Koetai/koetai-platform) — BHL → RDF pipeline** (`pipelines/bhl/artifacts/`):
+| Artefact | Purpose |
+|---|---|
+| [`bhl-mapping.yarrrml.yml`](https://github.com/Koetai/koetai-platform/blob/main/pipelines/bhl/artifacts/bhl-mapping.yarrrml.yml) | YARRRML/RML mapping, BHL TSVs → RDF |
+| [`bhl-shape.shex`](https://github.com/Koetai/koetai-platform/blob/main/pipelines/bhl/artifacts/bhl-shape.shex) | ShEx shapes the output must satisfy |
+| [`reconcile-wikidata.rq`](https://github.com/Koetai/koetai-platform/blob/main/pipelines/bhl/artifacts/reconcile-wikidata.rq) | Wikidata reconciliation query: `dwc:scientificName` → taxon (`wdt:P225`) |
+| [`lookups.py`](https://github.com/Koetai/koetai-platform/blob/main/pipelines/bhl/artifacts/lookups.py) | Identifier → URI resolution |
+| [`provenance.ttl.j2`](https://github.com/Koetai/koetai-platform/blob/main/pipelines/bhl/artifacts/provenance.ttl.j2) | Provenance template for the Zenodo bundle |
+
+**[Micelio/gbif_parquet](https://github.com/Micelio/gbif_parquet) — GBIF occurrences → RDF**:
+| Artefact | Purpose |
+|---|---|
+| [ShEx shape graph](https://github.com/Micelio/gbif_parquet#gbif-parquet----rdf-shex-shape-graph) (4 shapes, incl. `OccurrenceShape`) | Shapes the generated occurrence RDF must satisfy |
+| [`SPARQL/federatedWikidata.rq`](https://github.com/Micelio/gbif_parquet/blob/main/SPARQL/federatedWikidata.rq) | Federated query against Wikidata |
+| [`SPARQL/geoQuery.rq`](https://github.com/Micelio/gbif_parquet/blob/main/SPARQL/geoQuery.rq) | Geographic query |
+| [`SPARQL/institution_counts.rq`](https://github.com/Micelio/gbif_parquet/blob/main/SPARQL/institution_counts.rq) | Occurrence counts per institution |
+| [`SPARQL/predicates.rq`](https://github.com/Micelio/gbif_parquet/blob/main/SPARQL/predicates.rq) | Predicate inventory |
