@@ -33,3 +33,16 @@ is linked where one exists.
 | [Koetai/koetai-platform](https://github.com/Koetai/koetai-platform) | FAIR SPARQL endpoint platform — multi-tenant QLever with ORCID auth, ShEx/SHACL, SPARQList (dev on [Codeberg](https://codeberg.org/andrawaag/koetai-platform)); hosts the BHL → RDF pipeline and its live QLever endpoint |
 | [wilkinsonlab/FLAIR-GG](https://github.com/wilkinsonlab/FLAIR-GG/tree/main/SemanticModel) | Related YARRRML-mapping-plus-data-model-diagram semantic model (Location/Germplasm/Administrative) |
 | [Micelio/gbif_parquet](https://github.com/Micelio/gbif_parquet) | GBIF occurrence Parquet snapshots → RDF/Turtle, with its own ShEx shape graph |
+
+## Resources consulted
+
+Live SPARQL/data endpoints this effort queries against.
+
+| Resource | Endpoint |
+|---|---|
+| UniProt | [sparql.uniprot.org/sparql](https://sparql.uniprot.org/sparql) |
+| GBIF (QLever mirror) | [qlever.dev/api/gbif](https://qlever.dev/api/gbif) |
+| SynoSpecies (Plazi TreatmentBank, QLever mirror) | [qlever.ld.plazi.org/sparql](https://qlever.ld.plazi.org/sparql) |
+| Plazi TreatmentBank | [tb.plazi.org](https://tb.plazi.org) |
+| BHL (Biodiversity Heritage Library) at Koetai | [koetai.semscape.org/u/0000-0001-9773-4008/bhl/sparql](https://koetai.semscape.org/u/0000-0001-9773-4008/bhl/sparql) |
+| GeoNames (Rod Page's work) | *TBC — link needed* |
