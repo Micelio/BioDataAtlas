@@ -41,11 +41,15 @@ Live SPARQL/data endpoints this effort queries against.
 | Resource | Endpoint |
 |---|---|
 | UniProt | [sparql.uniprot.org/sparql](https://sparql.uniprot.org/sparql) |
+| Wikidata (QLever mirror) | [qlever.dev/api/wikidata](https://qlever.dev/api/wikidata) |
+| Wikidata (WDQS, official) | [query.wikidata.org/sparql](https://query.wikidata.org/sparql) |
 | GBIF (QLever mirror) | [qlever.dev/api/gbif](https://qlever.dev/api/gbif) |
+| OpenStreetMap (QLever mirror, `osm2rdf`) | [qlever.dev/api/osm-planet](https://qlever.dev/api/osm-planet) |
 | SynoSpecies (Plazi TreatmentBank, QLever mirror) | [qlever.ld.plazi.org/sparql](https://qlever.ld.plazi.org/sparql) |
 | Plazi TreatmentBank | [tb.plazi.org](https://tb.plazi.org) |
 | BHL (Biodiversity Heritage Library) at Koetai | [koetai.semscape.org/u/0000-0001-9773-4008/bhl/sparql](https://koetai.semscape.org/u/0000-0001-9773-4008/bhl/sparql) |
 | Bionames (Rod Page's own Koetai instance — Bionomia, BHL, registry datasets) | [koetai.bionames.org/endpoints](https://koetai.bionames.org/endpoints) |
+| Banco de Germoplasma Vegetal — UPM (Wilkinson lab seedbank data; `administrative`/`germplasm`/`location` repositories, matching the FLAIR-GG SemanticModel) | [bgv.cbgp.upm.es/repositories/administrative](https://bgv.cbgp.upm.es/repositories/administrative) · [.../germplasm](https://bgv.cbgp.upm.es/repositories/germplasm) · [.../location](https://bgv.cbgp.upm.es/repositories/location) |
 
 ## Semantic artefacts
 
