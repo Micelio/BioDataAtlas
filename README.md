@@ -45,4 +45,4 @@ Live SPARQL/data endpoints this effort queries against.
 | SynoSpecies (Plazi TreatmentBank, QLever mirror) | [qlever.ld.plazi.org/sparql](https://qlever.ld.plazi.org/sparql) |
 | Plazi TreatmentBank | [tb.plazi.org](https://tb.plazi.org) |
 | BHL (Biodiversity Heritage Library) at Koetai | [koetai.semscape.org/u/0000-0001-9773-4008/bhl/sparql](https://koetai.semscape.org/u/0000-0001-9773-4008/bhl/sparql) |
-| GeoNames (Rod Page's work) | *TBC — link needed* |
+| Bionames (Rod Page's own Koetai instance — Bionomia, BHL, registry datasets) | [koetai.bionames.org/endpoints](https://koetai.bionames.org/endpoints) |
